@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lekton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Armata&display=swap');
+
+/* All */
+*{
+    margin: 0;
+}
+
+:root{
+    --color1: #BCB2FF;
+    --color2: #A1B26B;
+    --color3: #FFDE73;
+    --color4: #772E99;
+    --color5: #232937;
+    --border-radius: 3px;
+    --subText: 1.5vw; 
+    --titleHeader: 'Armata', sans-serif;;
+    --title: 'Krona One', sans-serif;
+    --subTitle: 'Lekton', sans-serif;        
+    --img-logo-w: 5rem;
+    --velocidade: 0.3s;
+}
+
+/* Scroll */
+body::-webkit-scrollbar {
+    width: 12px;              
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color1);      
+}

@@ -1,0 +1,374 @@
+/* Login */
+.register{
+    background: linear-gradient(271deg, #BDB2FF 0%, rgba(204, 198, 235, 0.48) 51.97%, #CCB17A 100%);
+    
+  }
+  
+  .box-register{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  
+  
+  .card-info h1{
+      font-family: var(--title);
+      text-align: center;
+      font-size: 10vh;
+  }
+  
+  .entrada{
+      margin-top: 5rem;
+      display: grid;
+      text-align: center;
+      justify-content: center;
+  }
+  
+  .entrada p{
+      font-size: 1.5rem;
+      margin-left: 1rem;
+      font-family: var(--subTitle);
+      letter-spacing: 1.5rem;
+  }
+  
+  .entrada p:nth-last-of-type(2){
+      margin-top: 1rem; 
+  }
+  
+  .entrada input{
+      border-radius: var(--border-radius);
+      border: none;
+      height: 2.5rem;
+      font-size: 2vh;
+      font-family: var(--subTitle);
+      outline: none;
+      width: 26rem;
+  }
+  
+  .entrada a{
+      display: flex;
+      margin-top: 0.5rem;
+      justify-content: center;
+      text-decoration: none;
+      font-family: var(--title);   
+      color: #000; 
+      transition: var(--velocidade);
+  }
+  
+  .entrada a:hover{
+      color: var(--color1);
+  }
+  
+  .lembrar{
+      display: flex;
+      margin-top: 2rem;
+      align-items: center;
+      font-size: 1rem;
+      font-family: var(--subTitle);
+      letter-spacing: 0.5rem;
+  } 
+  
+  .lembrar input{
+      border: none;
+      border-radius: var(--border-radius);
+      width: 2rem;    
+      margin-right: 1rem;
+  }
+  
+  .entrada-btn{
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem;
+    text-align: center;   
+  }
+  
+  .entrada-btn a{
+    border: none;
+    border-radius: var(--border-radius);
+    position: relative;
+    display: inline-block;
+    padding: 0.7rem;
+    background-color: transparent;
+    border: none;  
+    margin-top: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .entrada-btn a::before {
+    content: "";
+    position: absolute;
+    border-radius: var(--border-radius);
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--color1);
+    transition: width var(--velocidade);
+  }
+  
+  .entrada-btn a:hover::before {
+    width: 100%;
+  }
+  
+  .entrada-btn a span {
+    font-family: var(--subTitle);
+    margin-left: 1.5rem;
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
+    position: relative;
+    z-index: 1;
+    color: #000;
+  }
+  
+  
+  /* Responsive */
+  @media (max-width: 1362px) {
+    .box-register img{
+      width: 30rem
+    } 
+  
+    .card-info h1 {
+      font-family: var(--title);
+      text-align: center;
+      font-size: 8vh;
+    }
+  
+    .entrada p {
+      font-size: 1rem;
+      margin-left: 1rem;
+      font-family: var(--subTitle);
+      letter-spacing: 1.5rem;
+    }
+  
+    .entrada input {
+      border-radius: var(--border-radius);
+      border: none;
+      height: 2.5rem;
+      font-size: 2vh;
+      font-family: var(--subTitle);
+      outline: none;
+      width: 20rem;
+    }
+  
+    .entrada-btn button span {
+      font-family: var(--subTitle);
+      margin-left: 1.5rem;
+      font-size: 1.5rem;
+      letter-spacing: 1.5rem;
+      position: relative;
+      z-index: 1;
+      color: #000;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .card-info h1 {
+      font-family: var(--title);
+      text-align: center;
+      font-size: 7vh;
+    }
+  
+    .entrada p {
+      font-size: 1.4rem;
+      margin-left: 1rem;
+      font-family: var(--subTitle);
+      letter-spacing: 1.5rem;
+    }
+  
+    .entrada input {
+      border-radius: var(--border-radius);
+      border: none;
+      height: 2.5rem;
+      font-size: 2vh;
+      font-family: var(--subTitle);
+      outline: none;
+      width: 18rem;
+    }
+  
+    .entrada-btn button span {
+      font-family: var(--subTitle);
+      margin-left: 1.5rem;
+      font-size: 1.4rem;
+      letter-spacing: 1.5rem;
+      position: relative;
+      z-index: 1;
+      color: #000;
+    }
+  
+    .box-register {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: row-reverse;
+    }
+  
+    .box-register img{
+      width: 25rem;
+    } 
+  }
+  
+  @media (max-width: 990px) {
+    nav {
+      display: flex !important;
+      justify-content: space-between;
+      align-items: center !important;
+      flex-wrap: wrap;
+      position: fixed;
+      width: 100%;
+      color: var(--color5);
+      z-index: 2;
+      transition: var(--velocidade);
+    }
+  
+    .box-register {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  
+    .card-info h1 {
+      font-family: var(--title);
+      text-align: center;
+      font-size: 6vh;
+    }
+  
+    .entrada p {
+      font-size: 1rem;
+      margin-left: 1rem;
+      font-family: var(--subTitle);
+      letter-spacing: 1.5rem;
+    }
+  
+    .entrada input {
+      border-radius: var(--border-radius);
+      border: none;
+      height: 2.5rem;
+      font-size: 2vh;
+      font-family: var(--subTitle);
+      outline: none;
+      width: 17rem;
+    }
+  
+    .entrada a {
+      display: flex;
+      margin-top: 0.5rem;
+      justify-content: center;
+      text-decoration: none;
+      font-family: var(--title);
+      color: #000;
+      transition: var(--velocidade);
+      font-size: 0.7rem;
+    }
+  
+    .entrada-btn button span {
+      font-family: var(--subTitle);
+      margin-left: 1.5rem;
+      font-size: 0.7rem;
+      position: relative;
+      z-index: 1;
+      color: #000;
+    }
+  
+     .box-register img{
+      width: 20rem;
+     } 
+  
+  
+  }
+  
+  @media (max-width: 768px) {
+    .box-register {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    
+    .card-info h1 {
+      font-family: var(--title);
+      text-align: center;
+      font-size: 6vh;
+    }
+  
+    .entrada p {
+      font-size: 1rem;
+      margin-left: 1rem;
+      font-family: var(--subTitle);
+      letter-spacing: 1.5rem;
+    }
+  
+    .entrada input {
+      border-radius: var(--border-radius);
+      border: none;
+      height: 2.5rem;
+      font-size: 2vh;
+      font-family: var(--subTitle);
+      outline: none;
+      width: 17rem;
+    }
+  
+    .entrada a {
+      display: flex;
+      margin-top: 0.5rem;
+      justify-content: center;
+      text-decoration: none;
+      font-family: var(--title);
+      color: #000;
+      transition: var(--velocidade);
+      font-size: 0.7rem;
+    }
+  
+    .entrada-btn button span {
+      font-family: var(--subTitle);
+      margin-left: 1.5rem;
+      position: relative;
+      z-index: 1;
+      font-size: 1rem;
+      color: #000;
+    }
+  
+     .box-register img{
+      width: 20rem;
+     } 
+  
+  }
+  
+  @media (max-width: 680px) {
+    .box-register img{
+      display: none;
+     } 
+  }
+  
+  @media (max-width: 360px) {
+    nav img {
+      margin: 1rem;    
+      width: 4rem;
+    }
+  
+    .card-info h1 {
+      font-family: var(--title);
+      text-align: center;
+      font-size: 5vh;
+    }
+  
+    .entrada p {
+      font-size: 1rem;
+      margin-left: 1rem;
+      font-family: var(--subTitle);
+      letter-spacing: 1.5rem;
+    }
+  
+    .entrada input {
+      border-radius: var(--border-radius);
+      border: none;
+      height: 2.5rem;
+      font-size: 2vh;
+      font-family: var(--subTitle);
+      outline: none;
+      width: 13rem;
+      margin-left: 0.5rem;
+    }
+  }

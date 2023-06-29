@@ -1,0 +1,753 @@
+/* home */
+#home{
+    background: linear-gradient(294deg, #BDB2FF 0%, rgba(217, 217, 217, 0.00) 100%);
+  }
+  
+  .home-inicio{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-entrada h3{
+    font-family: var(--subTitle);
+  }
+  
+  .text-entrada p{
+    font-family: var(--subTitle);
+    margin-left: 1rem;
+    letter-spacing: 2.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .text-entrada h1{
+    font-family: var(--title);
+    color: #000;
+    font-size: 100px;  
+  }
+  
+  .text-entrada2{
+    display: flex;
+  }
+  
+  .text-entrada2 h1{
+    color: var(--color2); 
+    font-size: 6.25rem;
+  } 
+  
+  .text-entrada2 h1:nth-of-type(2){
+    margin-left: 2rem;
+    color: var(--color1);  
+  }
+  
+  .flut{
+    animation: flutuacao 3s ease-in-out infinite;
+  }
+  
+  @keyframes flutuacao {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .ani-bottom{
+    text-align: center;
+  }
+  
+  .ani-bottom a {
+    border: none;
+    border-radius: var(--border-radius);
+    position: relative;
+    display: inline-block; 
+    padding: 0.7rem;
+    background-color: transparent;  
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .ani-bottom a::before {
+    content: "";
+    position: absolute;
+    border-radius: var(--border-radius);
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--color1);
+    transition: width var(--velocidade);
+  }
+  
+  .ani-bottom a:hover::before {
+    width: 100%;
+  }
+  
+  .ani-bottom a span {
+    font-family: var(--subTitle);
+    letter-spacing: 2.5rem;
+    margin-left: 2.5rem;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 1;
+    color: #000;
+  }
+  
+  
+  /* about */
+  #about h1{
+    margin-top: 3rem;
+    text-align: center;
+    font-family: var(--title);
+    color: #000;
+    font-size: 3.5rem;
+  }
+  
+  .history{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .person{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: flex-start;
+    flex-direction: row;
+    text-align: center;
+    width: 90%;
+  }
+  
+  .person img{  
+    transform: rotate(-50deg); 
+    border-radius: 20rem;
+    width: 30rem;
+  }
+  
+  .person p{
+    font-family: var(--subTitle);
+    width: 38rem;
+    margin-left: 7rem;
+  }
+  
+  .second-plan{
+    width: 100vh;
+    height: 80vh;  
+    background: linear-gradient(180deg, #BCB2FF 0%, rgba(188, 178, 255, 0.00) 100%);
+  }
+  
+  /* Plans */
+  #plans{
+    height: 100vh;
+    background: linear-gradient(45deg, #BDB2FF 0%, rgba(201, 195, 238, 0.56) 14.71%, rgba(213, 212, 222, 0.13) 80.63%, #FFDE73 100%);
+  }
+  
+  .plans-header{
+    display: flex; 
+    justify-content: center;     
+    padding-top: 5rem;
+  }
+  
+  .plans-header h1{  
+    margin-top: 3rem;
+    text-align: center;
+    font-family: var(--title);
+    color: #000;
+    font-size: 3.5rem;
+    margin-left: 3rem;
+  }
+  
+  .plans-cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8rem;
+  }
+  
+  .plans-cards h1{ 
+    font-size: 3.1rem;
+    font-family: var(--subTitle);
+    margin-top: 1.5rem;
+  }
+  
+  .plans-cards h3{ 
+    font-size: 2rem;
+    font-family: var(--subTitle);
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .plans-cards img{
+    height: 0.7rem;
+  }
+  
+  .card-simple{
+    background-color: #fff;
+    width: 29vh;
+    text-align: center;
+    border-radius: var(--border-radius);
+    box-shadow: -25px 25px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .card-simple h1{
+    color: var(--color1);
+  }
+  
+  .card-gold{
+    background-color: var(--color3);
+    width: 29vh;
+    text-align: center;
+    border-radius: var(--border-radius); 
+    box-shadow: 0px 36px 10px 0px rgba(0, 0, 0, 0.25);
+    margin: -1rem;
+  }
+  
+  .card-prata{
+    background-color: #E3E0E0;
+    width: 29vh;
+    text-align: center;
+    border-radius: var(--border-radius);
+    box-shadow: 25px 25px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .card-lado{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  
+  .card-lado p{
+    font-family: var(--subTitle);
+    margin-left: 1rem;
+    letter-spacing: 0.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .card-info{
+    margin-top: 2rem;
+  }
+  
+  
+  .simple-bottom{
+    text-align: center;
+  }
+  
+  .simple-bottom a {
+    border: none;
+    border-radius: var(--border-radius);
+    position: relative;
+    display: inline-block; 
+    padding: 0.7rem;
+    background-color: transparent;  
+    border: none;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .simple-bottom a::before {
+    content: "";
+    position: absolute;
+    border-radius: var(--border-radius);
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--color1);
+    transition: width var(--velocidade);
+  }
+  
+  .simple-bottom a:hover::before {
+    width: 100%;
+  }
+  
+  .simple-bottom a span {
+    font-family: var(--subTitle);
+    letter-spacing: 1rem;
+    font-size: 1rem;
+    margin-left: 1.5rem;
+    position: relative;
+    z-index: 1;  
+    color: #000;  
+  }
+  
+  .gold-bottom{
+    text-align: center;
+  }
+  
+  .gold-bottom a {
+    border: none;
+    border-radius: var(--border-radius);
+    position: relative;
+    display: inline-block; 
+    padding: 0.7rem;
+    background-color: transparent;  
+    border: none;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .gold-bottom a::before {
+    content: "";
+    position: absolute;
+    border-radius: var(--border-radius);
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #CCB17A;
+    transition: width var(--velocidade);
+  }
+  
+  .gold-bottom a:hover::before {
+    width: 100%;
+  }
+  
+  .gold-bottom a span {
+    font-family: var(--subTitle);
+    letter-spacing: 1rem;
+    font-size: 1rem;
+    margin-left: 1.5rem;
+    position: relative;
+    z-index: 1;
+    color: #000;
+  }
+  
+  
+  .prata-bottom{
+    text-align: center;
+  }
+  
+  .prata-bottom a {
+    border: none;
+    border-radius: var(--border-radius);
+    position: relative;
+    display: inline-block; 
+    padding: 0.7rem;
+    background-color: transparent;    
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .prata-bottom a::before {
+    content: "";
+    position: absolute;
+    border-radius: var(--border-radius);
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #E3E0E0;
+    border: 1px solid var(--color5);
+    transition: width var(--velocidade);
+  }
+  
+  .prata-bottom a:hover::before {
+    width: 100%;
+  }
+  
+  .prata-bottom a span {
+    font-family: var(--subTitle);
+    letter-spacing: 1rem;
+    font-size: 1rem;
+    margin-left: 1.5rem;
+    position: relative;
+    z-index: 1;
+    color: #000;
+  }
+  
+  
+
+  /* Responsive */
+  @media (max-width: 1664px) {
+    .person img {
+      transform: rotate(-50deg);
+      border-radius: 20rem;
+      width: 22rem;
+    }
+  
+    .plans-cards {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 4rem;
+  
+      }
+  }  
+  
+  @media (max-width: 1440px) {
+    .person p {
+      margin-left: 1rem;
+    }
+  
+    .plans-cards {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 4rem;
+    }
+  
+    .person img {
+      transform: rotate(-50deg);
+      border-radius: 20rem;
+      width: 22rem;
+    }
+  
+  }
+  
+  @media (max-width: 1260px) {
+    .flut{
+      width: 23rem;
+    }
+        
+    .person img {
+      transform: rotate(-50deg);
+      border-radius: 20rem;
+      width: 22rem;
+    }
+  }
+  
+  @media (max-width: 1096px) {
+    .text-entrada p {      
+      margin-left: 1rem;
+      letter-spacing: 1rem;
+      font-size: 1rem;
+    }
+  
+    .text-entrada h1 {
+      font-family: var(--title);
+      color: #000;
+      font-size: 4rem;
+    }
+  
+    .text-entrada2 h1 {
+      color: var(--color2);
+      font-size: 4rem;
+    }
+  
+    .ani-bottom a span {      
+      letter-spacing: 2rem;
+      margin-left: 2.5rem;
+      font-size: 1rem;
+      position: relative;
+      z-index: 1;
+      color: #000;
+    }
+  
+    .flut{
+      width: 18rem;
+    }
+  
+    .plans-header {
+      display: flex;
+      justify-content: center;
+      padding-top: 5rem;
+      padding-bottom: 4rem;
+    }
+  
+    .plans-cards {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 0;
+    }
+  
+  }
+  
+  @media (max-width: 878px) {
+    .card-simple {
+      width: 23vh;
+    }
+  
+    .card-gold {
+      width: 23vh;
+    }
+  
+    .card-prata {
+      width: 23vh;
+    }
+  
+    .card-lado p {
+      font-family: var(--subTitle);
+      margin-left: 1rem;
+      letter-spacing: 0.3rem;
+      font-size: 1rem;
+    }
+  
+    .simple-bottom a span {
+      font-family: var(--subTitle);
+      letter-spacing: 1rem;
+      font-size: 0.7rem;
+      margin-left: 1rem;
+      position: relative;
+      z-index: 1;
+      color: #000;
+    }
+  
+    .gold-bottom a span {
+      font-family: var(--subTitle);
+      letter-spacing: 1rem;
+      font-size: 0.7rem;
+      margin-left: 1rem;
+      position: relative;
+      z-index: 1;
+      color: #000;
+    }
+  
+    .prata-bottom a span {
+      font-family: var(--subTitle);
+      letter-spacing: 1rem;
+      font-size: 0.7rem;
+      margin-left: 1rem;
+      position: relative;
+      z-index: 1;
+      color: #000;
+    }
+  
+    .plans-cards {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 0;
+    }
+  
+  }
+    
+  @media (max-width: 768px) {
+    .text-entrada p {      
+      margin-left: 1rem;
+      letter-spacing: 1rem;
+      font-size: 1rem;
+    }
+  
+    .text-entrada h1 {
+      font-family: var(--title);
+      color: #000;
+      font-size: 3rem;
+    }
+  
+    .text-entrada2 h1 {
+      color: var(--color2);
+      font-size: 3rem;
+    }
+  
+    .ani-bottom a span {      
+      letter-spacing: 2rem;
+      margin-left: 2.5rem;
+      font-size: 1rem;
+      position: relative;
+      z-index: 1;
+      color: #000;
+    }
+  
+    .ani-bottom a {
+      border: none;
+      border-radius: var(--border-radius);
+      position: relative;
+      display: inline-block; 
+      padding: 0.3rem;
+      background-color: transparent;  
+      border: none;
+      overflow: hidden;
+    }
+  
+    .person img {
+      transform: rotate(-50deg);
+      border-radius: 20rem;
+      width: 17rem;
+    }
+  
+    .plans-cards h1 {
+      font-size: 2rem;
+      font-family: var(--subTitle);
+      margin-top: 1.5rem;
+    }
+  
+    .plans-cards h3 {
+      font-size: 1.5rem;
+      font-family: var(--subTitle);
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+    }  
+  }
+  
+  @media (max-width: 680px) {
+    .logo img {
+      width: 4rem !important;
+    }
+      
+    .text-entrada p {      
+      margin-left: 0.5rem;
+      letter-spacing: 0.7rem;
+      font-size: 1.2rem;
+    }
+  
+    .text-entrada h1 {
+      margin-top: 2rem;
+      font-family: var(--title);
+      color: #000;
+      font-size: 3rem;
+    }
+  
+    .text-entrada2 h1 {
+      margin-top: 1rem;
+      color: var(--color2);
+      font-size: 3rem;
+    }
+  
+    .text-entrada2 h1:nth-of-type(2) {
+      margin-left: 1rem;
+      color: var(--color1);
+    }
+  
+    .ani-bottom a span {      
+      letter-spacing: 1rem;
+      margin-left: 2.5rem;
+      font-size: 1rem;
+      position: relative;
+      z-index: 1;
+      color: #000;
+    }
+  
+    .ani-bottom {
+      margin-top: 3rem;
+      text-align: center;
+    }
+  
+    .flut {
+      display: none;
+    }
+  
+    #about h1 {
+      margin-top: 3rem;
+      text-align: center;
+      font-family: var(--title);
+      color: #000;
+      font-size: 2.5rem;
+    }
+  
+    .person {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      justify-content: flex-start;
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .person img {
+      transform: rotate(-50deg);
+      border-radius: 20rem;
+      width: 12rem;
+    }
+  
+    .person p {
+      margin-left: 0rem;
+      font-size: 1rem;
+      width: 95%;
+      margin-top: 1.5rem;
+    }
+  
+    #plans {
+      margin-top: 2rem;
+      height: 200vh;
+      background: linear-gradient(45deg, #BDB2FF 0%, rgba(201, 195, 238, 0.56) 14.71%, rgba(213, 212, 222, 0.13) 80.63%, #FFDE73 100%);
+    }
+  
+    .plans-header img{
+      display: none;
+    }
+  
+    .plans-header h1 {
+      margin-top: 3rem;
+      text-align: center;
+      font-family: var(--title);
+      color: #000;
+      font-size: 3.5rem;
+      margin-left: 0;
+    }
+  
+    .plans-cards {
+      display: flex;
+      margin-top: 0;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card-gold{
+      margin-top: 2rem;
+      box-shadow: -25px 25px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+  
+    .card-prata{
+      margin-top: 2rem;
+      box-shadow: -25px 25px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+  
+    .footerContact {
+      padding-top: 1rem;
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .footerContact h3{
+      font-size: 1rem;
+    }
+  
+    .footerContact .list-contact {
+      font-size: 0.5rem;
+    }  
+  
+    .Pages{
+      margin-right: 0.9em;
+    }
+  
+    .Pages h3{
+      font-size: 1rem;
+    }
+  
+    .list-pages {
+      list-style: none;
+      font-size: 0.5rem;
+      display: block;
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+  
+  @media (max-width: 348px) {
+    .text-entrada h1 {
+      margin-top: 2rem;
+      font-family: var(--title);
+      color: #000;
+      font-size: 2.5rem;
+    }  
+    
+    .text-entrada2 h1 {
+      margin-top: 1rem;
+      color: var(--color2);
+      font-size: 2.5rem;
+    }
+  
+    #plans {
+      margin-top: 5rem;
+      height: 200vh;
+      background: linear-gradient(45deg, #BDB2FF 0%, rgba(201, 195, 238, 0.56) 14.71%, rgba(213, 212, 222, 0.13) 80.63%, #FFDE73 100%);
+    }
+  
+    .person img {
+      margin-top: 5rem;
+      transform: rotate(-50deg);
+      border-radius: 20rem;
+      width: 12rem;
+    }
+  }

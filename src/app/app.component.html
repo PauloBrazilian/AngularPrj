@@ -1,0 +1,111 @@
+<header>
+    <nav>
+      <a class="logo" routerLink="/index"><img src="../assets/img/new_logo/finstock_abrev.png" alt="" srcset=""></a>
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a routerLink="/index" class="ho">Home</a></li>
+        <li><a routerLink="/index" class="abo">About</a></li>
+        <li><a routerLink="/index" class="con">Contact</a></li>
+        <li><a routerLink="/register" class="reg">Register</a></li>          
+      </ul>
+      <ul class="nav-list">
+        <li><a routerLink="login" class="lon">Login</a></li>
+      </ul>
+    </nav>
+</header>
+
+<router-outlet></router-outlet>
+
+<footer>
+  <div class="footerContact">
+      <div class="footerContactInfo">
+          <h3>Endereço</h3>
+          <ul class="list-contact">                    
+              <li><p>Rua Dos Canarios</p></li>
+              <li><p>15000-000</p></li>
+              <li><p>32435609</p></li>
+              <li><p>Curitiba</p></li>
+          </ul>
+      </div>
+      <div class="pages">
+          <h3>Pages</h3>
+          <ul class="list-pages">
+              <li><a routerLink="/index" class="ho-foo">Home</a></li>
+              <li><a routerLink="/index" class="abo-foo">About</a></li>
+              <li><a routerLink="/index" class="con-foo">Contact</a></li>
+              <li><a routerLink="/login" class="reg-foo">Register</a></li>          
+          </ul>
+      </div>
+      <div class="logo">
+          <!-- <img src="../img/new_logo/finstock_abrev.png" alt="">     -->
+          <img src="../assets/img/new_logo/finstock_abrev.png" alt="" srcset="">
+      </div> 
+  </div>        
+</footer>
+
+<!-- <script>
+// scroll
+window.addEventListener('scroll', function() {   
+  var nav = document.querySelector('nav');
+  var scrollPosition = window.scrollY || window.pageYOffset;
+  
+  if (scrollPosition > 0) {
+    nav.classList.add('scroll-down');
+  } else {
+    nav.classList.remove('scroll-down');
+  }
+
+});
+
+
+
+// nav
+class MobileNavbar {
+    constructor(mobileMenu, navList, navLinks) {
+      this.mobileMenu = document.querySelector(mobileMenu);
+      this.navList = document.querySelector(navList);
+      this.navLinks = document.querySelectorAll(navLinks);
+      this.activeClass = "active";
+  
+      this.handleClick = this.handleClick.bind(this);
+    }
+  
+    animateLinks() {
+      this.navLinks.forEach((link, index) => {
+        link.style.animation
+          ? (link.style.animation = "")
+          : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+              index / 7 + 0.3
+            }s`);
+      });
+    }
+  
+    handleClick() {
+      this.navList.classList.toggle(this.activeClass);
+      this.mobileMenu.classList.toggle(this.activeClass);
+      this.animateLinks();
+    }
+  
+    addClickEvent() {
+      this.mobileMenu.addEventListener("click", this.handleClick);
+    }
+  
+    init() {
+      if (this.mobileMenu) {
+        this.addClickEvent();
+      }
+      return this;
+    }
+  }
+  
+  const mobileNavbar = new MobileNavbar(
+    ".mobile-menu",
+    ".nav-list",
+    ".nav-list li",
+  );
+mobileNavbar.init();  
+</script> -->

@@ -1,0 +1,361 @@
+/* Header */
+nav {
+  display: flex !important;
+  justify-content: space-around;
+  align-items: center !important;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  color: var(--color5);
+  z-index: 2;
+  transition: var(--velocidade);
+  }
+  
+  nav a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    opacity: 0.7;
+  }
+  
+  nav img{
+    margin: 1rem;    
+    width: var(--img-logo-w); 
+  }
+  
+  .nav-list {
+    z-index: 60;
+    list-style: none;
+    display: flex;  
+    margin-bottom: 0;
+  }
+  
+  .nav-list li {
+    letter-spacing: 2px;    
+  }
+  
+  
+  .mobile-menu {
+    margin: 1rem;
+    padding: 5px;
+    border-radius: var(--border-radius);
+    background-color: var(--color1);
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: var(--color5);
+    overflow-x: hidden;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+        margin-top: 5px;
+        padding: 0;
+        position: absolute;
+        top: 9vh;
+        right: 0;
+        width: 50vw;
+        height: 150px;
+        border: 2px solid var(--color1);
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(103%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+    position: absolute;
+    height: 450px;
+  }
+  
+  .ho::after{
+    content: "";
+    position: absolute;
+    background-color: var(--color1);
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -5px;
+    transition: var(--velocidade); 
+  } 
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+  
+  
+  nav .nav-list{
+    display: flex;
+  }
+  
+  nav .nav-list li{
+    position: relative;
+    list-style: none;
+  }
+  
+  /* nav .nav-list li a{
+    margin-top: 10px;
+    font-family: var(--subTitle);
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: var(--color5);
+    font-weight: 500px;
+    padding: 0 10px;
+    cursor: pointer;
+  } */
+  
+
+  nav .nav-list li a {
+    margin: 0 15px;
+    padding: 0 10px;
+    border: none;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    position: relative;
+    display: inline-block; 
+    background-color: transparent;
+    font-family: var(--titleHeader);  
+    border: none;
+    overflow: hidden;
+  }
+  
+  nav .nav-list li:nth-of-type(1)::before {
+    content: "";
+    position: absolute;
+    border-radius: var(--border-radius);
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--color1);
+    transition: width var(--velocidade);
+  }
+  
+  nav .nav-list li:nth-of-type(1):hover::before {
+    width: 100%;
+  }
+  
+  nav .nav-list .ho:nth-of-type(1) {  
+    position: relative;
+    z-index: 1;
+    color: #000;
+  }
+
+
+  .ho::after{
+    content: "";
+    position: absolute;
+    background-color: var(--color1);
+    text-decoration: none;
+    height: 3px;
+    width: 100%;
+    left: -1px;
+    bottom: -5px;
+    transition: var(--velocidade); 
+  }
+  
+  
+  /* .abo::after{
+    content: "";
+    position: absolute;
+    background-color: var(--color1);
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -5px;
+    transition: 0.3s; 
+  }
+  
+  .abo:hover::after{
+    width: 100%;
+  }
+  
+  .con::after{
+    content: "";
+    position: absolute;
+    background-color: var(--color1);
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -5px;
+    transition: 0.3s; 
+  }
+  
+  .con:hover::after{
+    width: 100%;
+  }
+  
+  .reg::after{
+    content: "";
+    position: absolute;
+    background-color: var(--color1);
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -5px;
+    transition: 0.3s; 
+  }
+
+  .reg:hover::after{
+    width: 100%;
+  }*/
+
+  /* nav .nav-list2 li a {
+    margin: 0 15px;
+    padding: 0 10px;
+    border: none;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    position: relative;
+    display: inline-block; 
+    background-color: transparent;  
+    border: none;
+    overflow: hidden;
+  }
+  
+  nav .nav-list2 li:before {
+    content: "";
+    position: absolute;
+    border-radius: var(--border-radius);
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: var(--color1);
+    transition: width 0.3s;
+  }
+  
+  nav .nav-list2 li:hover::before {
+    width: 100%;
+  }
+  
+  nav .nav-list2 .lon {
+    font-family: var(--subText);
+    position: relative;
+    z-index: 1;
+    color: #000;
+  }
+
+          
+  .lon::after{
+    content: "";
+    position: absolute;
+    background-color: var(--color1);
+    height: 3px;
+    width: 0;
+    left: -1px;
+    bottom: -5px;
+    transition: 0.3s; 
+  }
+
+  .lon:hover::after{
+    width: 100%;
+}  */
+
+
+/* footer */
+.footerContact{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: var(--subTitle);
+  }
+  
+  
+  .footerContact .list-contact{
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .pages h3{
+    text-align: center;
+  }
+  
+  .list-pages {  
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding-left: 0;
+  }
+  
+  
+  .list-pages li a{  
+    text-decoration: none;
+    color: #000;
+    transition: var(--velocidade);
+  }
+  
+  .list-pages li a:hover{  
+    color: var(--color1);
+    transition: var(--velocidade);
+  }
+  
+  .footerContact p{
+    margin-bottom: 0.1rem;
+  }
+  
+  .redes{
+    text-align: center;
+  }
+  
+  
+  .redes img{
+    margin-top: 0.5rem;
+    width: 2rem;  
+  }
+  
+  .logo img{
+    width: var(--img-logo-w);
+  }
+
+
+/* Responsive */
+@media (max-width: 1000px) {
+  nav{
+    justify-content: space-between;
+  } 
+    
+}
