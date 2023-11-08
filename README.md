@@ -17,26 +17,6 @@ O layout e design do FireStock foram desenvolvidos no Figma e podem ser visualiz
 
 - Análise de desempenho financeiro
 
-## Instalação
+## Versão Angular
 
-Para executar o FireStock localmente, siga estas etapas:
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/firestock.git
-   ```
-
-2. Instale as dependências:
-   ```bash
-   cd firestock
-   npm install
-   ```
-
-3. Inicie o servidor de desenvolvimento:
-   ```bash
-   ng serve
-   ```
-
-Acesse o aplicativo em seu navegador em `http://localhost:4200`.
-
-Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 16.1.0.
+- Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 16.1.0.
