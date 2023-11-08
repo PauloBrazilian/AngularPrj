@@ -1,27 +1,42 @@
-# AngularPrj
+# FireStock - Empresa de Finanças
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+FireStock é um projeto de uma empresa fictícia de finanças, desenvolvido utilizando Angular. Ele visa fornecer uma plataforma para gerenciamento e análise financeira.
 
-## Development server
+## Visão Geral
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O FireStock é uma aplicação web voltada para a gestão de finanças, oferecendo recursos como acompanhamento de investimentos, controle de despesas e visualização de dados financeiros de forma intuitiva.
 
-## Code scaffolding
+O layout e design do FireStock foram desenvolvidos no Figma e podem ser visualizados [aqui](https://www.figma.com/file/wDUHbN07vMGkzMaEGPaJtj/PRJ--JUH?type=design&node-id=0-1&mode=design&t=17bhGqJqLmS6N7cu-0).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tecnologias Utilizadas
 
-## Build
+- Angular
+- HTML, CSS, TypeScript
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Funcionalidades
 
-## Running unit tests
+- Análise de desempenho financeiro
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Instalação
 
-## Running end-to-end tests
+Para executar o FireStock localmente, siga estas etapas:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/firestock.git
+   ```
 
-## Further help
+2. Instale as dependências:
+   ```bash
+   cd firestock
+   npm install
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. Inicie o servidor de desenvolvimento:
+   ```bash
+   ng serve
+   ```
+
+Acesse o aplicativo em seu navegador em `http://localhost:4200`.
+
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 16.1.0.
