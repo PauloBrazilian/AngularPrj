@@ -11,7 +11,9 @@ O layout e design do FireStock foram desenvolvidos no Figma e podem ser visualiz
 ## Tecnologias Utilizadas
 
 - Angular
-- HTML, CSS, TypeScript
+- HTML
+- CSS
+- TypeScript
 
 ## Funcionalidades
 
